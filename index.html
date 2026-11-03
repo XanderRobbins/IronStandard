@@ -2,201 +2,348 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Iron Standard — Online Fitness Coaching for Christian Men</title>
   <meta name="description" content="Faith-centered online coaching: a personalized training and nutrition plan paired with biblical teaching. Train your body. Lead with conviction.">
-  <meta name="theme-color" content="#0e0f12">
+  <meta name="theme-color" content="#0f0f0d">
+  <link rel="canonical" href="https://ironstandard.men/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ironstandard.men/">
+  <meta property="og:title" content="Iron Standard — Train your body. Lead with conviction.">
+  <meta property="og:description" content="Faith-centered online coaching for Christian men: a personalized training and nutrition plan, biblical teaching, and a weekly 1-on-1 call.">
+  <meta property="og:image" content="https://ironstandard.men/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f0f0d'/%3E%3Cpath fill='%23c9a452' d='M6 7h20v4H6zM14 7h4v18h-4zM6 21h20v4H6z'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="nav" id="nav">
     <div class="wrap nav__inner">
-      <a href="#top" class="logo">IRON <span>STANDARD</span></a>
-      <button class="nav__toggle" aria-label="Menu" aria-expanded="false" aria-controls="navlinks"><span></span><span></span></button>
-      <nav class="nav__links" id="navlinks">
+      <a href="#top" class="logo" aria-label="Iron Standard, back to top">
+        <svg class="logo__mark" viewBox="0 0 16 16" aria-hidden="true"><path d="M0 1h16v3H0zM6.5 1h3v14h-3zM0 12h16v3H0z"/></svg>
+        Iron Standard
+      </a>
+      <nav class="nav__links" id="navlinks" aria-label="Primary">
         <a href="#what-you-get">What you get</a>
         <a href="#how-it-works">How it works</a>
         <a href="#coach">Your coach</a>
-        <a href="#apply" class="nav__apply">Apply</a>
+        <a href="#faq">FAQ</a>
+        <a href="#apply" class="btn btn--accent btn--sm nav__apply">Apply</a>
+        <p class="nav__meta">$150 / month · Free 15-minute intro call</p>
       </nav>
+      <button class="nav__toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navlinks"><span></span><span></span></button>
     </div>
+    <div class="nav__progress" aria-hidden="true"></div>
   </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="wrap hero__inner">
-        <p class="eyebrow reveal">Online fitness coaching for Christian men</p>
-        <h1 class="reveal">Train your body.<br><span class="gold">Lead with conviction.</span></h1>
-        <p class="lead reveal">Iron Standard is faith-centered coaching that pairs a personalized training and nutrition plan with biblical teaching, so you build the strength to carry what God has put in your hands.</p>
-        <div class="hero__cta reveal">
-          <a href="#apply" class="btn btn--gold">Apply now</a>
-          <a href="#how-it-works" class="btn btn--ghost">See how it works</a>
+  <main>
+    <section class="hero" id="top">
+      <!-- Photo: Nathan Mullet on Unsplash (unsplash.com/photos/l_BP6X0EgE8), Unsplash License -->
+      <div class="hero__bg" aria-hidden="true">
+        <img src="img/plate-2000.webp" srcset="img/plate-1000.webp 1000w, img/plate-2000.webp 2000w" sizes="(max-width: 1024px) 100vw, 75vw" width="2000" height="1333" alt="" fetchpriority="high" decoding="async">
+      </div>
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="hero__kicker reveal">
+            <span class="status" id="status"><span class="status__dot"></span><span id="status-text">Applications opening soon</span></span>
+            Online coaching for Christian men
+          </p>
+          <h1 class="reveal" style="--d:.06s"><span>Train your body.</span> <span class="accent">Lead with <span class="scribble">conviction.<svg viewBox="0 0 300 24" preserveAspectRatio="none" aria-hidden="true"><path d="M4 16c38-7 92-11 148-10 52 1 96 4 142 9M24 21c60-5 140-6 236-2"/></svg></span></span></h1>
+          <p class="lead reveal" style="--d:.12s">Iron Standard is faith-centered coaching that pairs a personalized training and nutrition plan with biblical teaching, so you build the strength to carry what God has put in your hands.</p>
+          <div class="hero__cta reveal" style="--d:.18s">
+            <a href="#apply" class="btn btn--accent">Apply now <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+            <a href="#how-it-works" class="link-arrow">See how it works</a>
+          </div>
+          <ul class="hero__facts reveal" style="--d:.24s">
+            <li><strong>$150</strong>per month</li>
+            <li><strong>30 min</strong>weekly 1-on-1</li>
+            <li><strong>Free</strong>15-min intro call</li>
+          </ul>
         </div>
-        <p class="verse reveal">“Iron sharpeneth iron; so a man sharpeneth the countenance of his friend.” <span>Proverbs 27:17</span></p>
+
+        <aside class="week reveal" id="week" style="--d:.3s" aria-label="Sample training week">
+          <div class="week__head">
+            <span class="week__title">Sample week <span class="week__no" id="week-no"></span></span>
+            <span class="week__count"><b id="week-done">0</b> / 6 done</span>
+          </div>
+          <div class="week__bar"><span id="week-bar"></span></div>
+          <ul class="week__list">
+            <li><button type="button" class="week__item" aria-pressed="false"><span class="week__day">Mon</span><span class="week__what"><b>Lower A</b>Squat · RDL · split squat</span><span class="week__check"></span></button></li>
+            <li><button type="button" class="week__item" aria-pressed="false"><span class="week__day">Tue</span><span class="week__what"><b>Upper A</b>Bench · row · pull-ups</span><span class="week__check"></span></button></li>
+            <li><button type="button" class="week__item" aria-pressed="false"><span class="week__day">Wed</span><span class="week__what"><b>Teaching: discipline</b>1 Corinthians 9:24–27</span><span class="week__check"></span></button></li>
+            <li><button type="button" class="week__item" aria-pressed="false"><span class="week__day">Thu</span><span class="week__what"><b>Lower B</b>Deadlift · lunge · carries</span><span class="week__check"></span></button></li>
+            <li><button type="button" class="week__item" aria-pressed="false"><span class="week__day">Fri</span><span class="week__what"><b>Upper B</b>Press · chin-ups · dips</span><span class="week__check"></span></button></li>
+            <li><button type="button" class="week__item" aria-pressed="false"><span class="week__day">Sat</span><span class="week__what"><b>1-on-1 call</b>Review, adjust, pray</span><span class="week__check"></span></button></li>
+          </ul>
+          <p class="week__foot">
+            <span class="week__hint">Tap a day to check it off. Your real plan is built around your goals, schedule, and equipment.</span>
+            <span class="week__win">Week complete. That’s the standard.</span>
+          </p>
+        </aside>
       </div>
+
+      <figure class="wrap verse">
+        <blockquote>“Iron sharpeneth iron; so a man sharpeneth the countenance of his friend.”</blockquote>
+        <figcaption>Proverbs 27:17</figcaption>
+      </figure>
     </section>
 
-    <section class="section section--narrow">
-      <div class="wrap wrap--narrow reveal">
-        <p class="eyebrow">Sound familiar?</p>
-        <h2>Strong in some areas. Drifting in others.</h2>
-        <p class="body-lg">You know you should train, eat well, and show up in your faith and your home. But the gym plan keeps changing, the diet starts on Monday, and your quiet time gets crowded out. You don’t need more motivation. You need a standard, and someone walking it with you.</p>
-        <p class="body-lg body-lg--bright">Scripture treats discipline of the body and the heart as part of the same calling. Iron Standard trains both.</p>
-      </div>
-    </section>
-
-    <section class="section section--dark" id="what-you-get">
+    <section class="section">
       <div class="wrap">
-        <p class="eyebrow reveal">What you get</p>
-        <h2 class="reveal">One program. Four pillars.</h2>
-        <div class="cards">
-          <article class="card reveal">
+        <p class="sec-label"><span>01</span>Sound familiar?</p>
+        <div class="split">
+          <h2>Strong in some areas. Drifting in others.</h2>
+          <div>
+            <p class="body-lg">You know you should train, eat well, and show up in your faith and your home. But the gym plan keeps changing, the diet starts on Monday, and your quiet time gets crowded out. You don’t need more motivation. You need a standard, and someone walking it with you.</p>
+            <p class="body-lg body-lg--bright">Scripture treats discipline of the body and the heart as part of the same calling. Iron Standard trains both.</p>
+          </div>
+        </div>
+
+        <div class="contrast reveal">
+          <div class="contrast__col contrast__col--off">
+            <h3>Without a standard</h3>
+            <ul>
+              <li>The gym plan changes every few weeks</li>
+              <li>The diet starts on Monday</li>
+              <li>Quiet time gets crowded out</li>
+              <li>Nobody is checking in</li>
+            </ul>
+          </div>
+          <div class="contrast__col contrast__col--on">
+            <h3>With Iron Standard</h3>
+            <ul>
+              <li>One program, tracked week to week</li>
+              <li>Nutrition targets that fit real life</li>
+              <li>Teaching tied to your training</li>
+              <li>A weekly call with your coach</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--raised" id="what-you-get">
+      <div class="wrap">
+        <p class="sec-label"><span>02</span>What you get</p>
+        <h2>One program. Four pillars.</h2>
+        <ol class="pillars reveal">
+          <li class="pillar">
+            <span class="pillar__n">i.</span>
             <h3>Training plan + tracker</h3>
             <p>A program built around your goals, schedule, equipment, and injury history, with a tracker so progress is measured, not guessed.</p>
-          </article>
-          <article class="card reveal">
+          </li>
+          <li class="pillar">
+            <span class="pillar__n">ii.</span>
             <h3>Nutrition targets</h3>
             <p>Suggested calorie, protein, and nutrient ranges that fit real life. General guidance, not rigid meal plans or medical diet advice.</p>
-          </article>
-          <article class="card reveal">
+          </li>
+          <li class="pillar">
+            <span class="pillar__n">iii.</span>
             <h3>Biblical teaching + coaching</h3>
             <p>Short, practical teaching on discipline, stewardship, leadership, and what it means to be a man after God, tied to your weekly training.</p>
-          </article>
-          <article class="card reveal">
+          </li>
+          <li class="pillar">
+            <span class="pillar__n">iv.</span>
             <h3>Weekly 1-on-1 session</h3>
             <p>A 30-minute call every week to review your numbers, adjust your plan, pray, and set the next week’s targets.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--raised" id="how-it-works">
-      <div class="wrap">
-        <p class="eyebrow reveal">How it works</p>
-        <h2 class="reveal">Four steps to start.</h2>
-        <ol class="steps">
-          <li class="reveal"><span class="steps__n">01</span><h3>Apply</h3><p>Tell me your goals, training history, and where you are in your faith. Takes about five minutes.</p></li>
-          <li class="reveal"><span class="steps__n">02</span><h3>Intro call</h3><p>A free 15-minute conversation to make sure we’re a good fit for each other.</p></li>
-          <li class="reveal"><span class="steps__n">03</span><h3>Get your plan</h3><p>Your training program, tracker, and nutrition targets, ready before your first week.</p></li>
-          <li class="reveal"><span class="steps__n">04</span><h3>Train and grow</h3><p>Weekly sessions, ongoing adjustments, and biblical teaching to keep you moving.</p></li>
+          </li>
         </ol>
       </div>
     </section>
 
-    <section class="section" id="coach">
+    <section class="section" id="how-it-works">
+      <div class="wrap">
+        <p class="sec-label"><span>03</span>How it works</p>
+        <h2>Four steps to start.</h2>
+        <ol class="steps">
+          <li class="step" style="--i:0"><span class="step__dot"></span><span class="step__n">Step 1</span><h3>Apply</h3><p>Tell me your goals, training history, and where you are in your faith.</p><span class="step__meta">About 5 minutes</span></li>
+          <li class="step" style="--i:1"><span class="step__dot"></span><span class="step__n">Step 2</span><h3>Intro call</h3><p>A free conversation to make sure we’re a good fit for each other.</p><span class="step__meta">15 minutes · free</span></li>
+          <li class="step" style="--i:2"><span class="step__dot"></span><span class="step__n">Step 3</span><h3>Get your plan</h3><p>Your training program, tracker, and nutrition targets.</p><span class="step__meta">Ready before week one</span></li>
+          <li class="step" style="--i:3"><span class="step__dot"></span><span class="step__n">Step 4</span><h3>Train and grow</h3><p>Weekly sessions, ongoing adjustments, and biblical teaching to keep you moving.</p><span class="step__meta">Every week</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--raised" id="coach">
       <div class="wrap coach">
         <div class="coach__photo reveal"><span>[Your photo]</span></div>
-        <div class="coach__text reveal">
-          <p class="eyebrow">Your coach</p>
+        <div class="coach__text">
+          <p class="sec-label"><span>04</span>Your coach</p>
           <h2>Meet [Your name]</h2>
           <p class="body-md">I’m a NASM Certified Personal Trainer, a nutrition coach in training, and a student finishing a B.S. in Applied Physiology and Kinesiology at the University of Florida. [Your faith and fitness story: why you coach, and what changed when you put God first in your training.]</p>
-          <ul class="creds">
-            <li>NASM Certified Personal Trainer (NASM-CPT)</li>
-            <li>Nutrition coaching certification: in progress</li>
-            <li>B.S. candidate, Applied Physiology and Kinesiology, University of Florida</li>
-          </ul>
+          <dl class="creds">
+            <div><dt>Certified</dt><dd>NASM Certified Personal Trainer (NASM-CPT)</dd></div>
+            <div><dt>Nutrition</dt><dd>Nutrition coaching certification: in progress</dd></div>
+            <div><dt>Education</dt><dd>B.S. candidate, Applied Physiology and Kinesiology, University of Florida</dd></div>
+          </dl>
         </div>
       </div>
     </section>
 
-    <section class="section section--raised">
-      <div class="wrap wrap--center">
-        <p class="eyebrow reveal">Membership</p>
-        <h2 class="reveal">Iron Standard Coaching</h2>
-        <div class="price reveal">
-          <p class="price__amt">$150 <span>/ month</span></p>
-          <ul class="price__list">
-            <li>Personalized training plan and progress tracker</li>
-            <li>Suggested food and nutrient target ranges</li>
-            <li>Biblical teaching and coaching</li>
-            <li>Weekly 30-minute 1-on-1 session</li>
-          </ul>
-          <a href="#apply" class="btn btn--gold btn--block">Apply now</a>
-          <p class="price__note">Limited spots so every man gets real attention. [Add minimum term / founding rate if used]</p>
+    <section class="section" id="membership">
+      <div class="wrap">
+        <p class="sec-label"><span>05</span>Membership</p>
+        <div class="price">
+          <div class="price__main">
+            <h2>Iron Standard Coaching</h2>
+            <p class="price__amt"><span class="price__cur">$</span>150<span class="price__per">/ month</span></p>
+            <p class="price__note">Limited spots so every man gets real attention. [Add minimum term / founding rate if used]</p>
+          </div>
+          <div class="price__side">
+            <ul class="price__list">
+              <li>Personalized training plan and progress tracker</li>
+              <li>Suggested food and nutrient target ranges</li>
+              <li>Biblical teaching and coaching</li>
+              <li>Weekly 30-minute 1-on-1 session</li>
+            </ul>
+            <a href="#apply" class="btn btn--accent btn--block">Apply now <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+            <p class="price__fine">Every membership starts with a free 15-minute intro call.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section section--narrow" id="faq">
-      <div class="wrap wrap--narrow">
-        <p class="eyebrow reveal">Questions</p>
-        <h2 class="reveal">Before you apply</h2>
-        <div class="faq reveal">
-          <details>
-            <summary>Do I need to be in great shape to start?</summary>
-            <p>No. Every program is built around where you are today. If you can commit to showing up, we’ll scale the training to your level.</p>
-          </details>
-          <details>
-            <summary>Do I need a gym?</summary>
-            <p>Not necessarily. Tell me what equipment you have access to on your application and I’ll build the plan around it, whether that’s a full gym, a garage setup, or just dumbbells.</p>
-          </details>
-          <details>
-            <summary>Is this only for men who are already strong in their faith?</summary>
-            <p>No. Whether you’re rock solid, rusty, or just getting started, you’re welcome. The teaching meets you where you are.</p>
-          </details>
-          <details>
-            <summary>What does the nutrition part include?</summary>
-            <p>Suggested calorie, protein, and nutrient target ranges that fit your goals and your life. It’s general guidance, not rigid meal plans or medical diet advice.</p>
-          </details>
-          <details>
-            <summary>What happens on the weekly call?</summary>
-            <p>Thirty minutes to review your numbers, adjust your training and targets, pray together, and set the next week’s goals.</p>
-          </details>
-          <details>
-            <summary>Can I cancel?</summary>
-            <p>[Add your cancellation / minimum term policy here.]</p>
-          </details>
+    <section class="section section--raised" id="faq">
+      <div class="wrap">
+        <p class="sec-label"><span>06</span>Questions</p>
+        <div class="faq-grid">
+          <div class="faq-grid__head">
+            <h2>Before you apply</h2>
+            <p class="body-md">Anything not covered here, ask on your intro call.</p>
+          </div>
+          <div class="faq reveal">
+            <details name="faq">
+              <summary>Do I need to be in great shape to start?<span class="faq__icon" aria-hidden="true"></span></summary>
+              <p>No. Every program is built around where you are today. If you can commit to showing up, we’ll scale the training to your level.</p>
+            </details>
+            <details name="faq">
+              <summary>Do I need a gym?<span class="faq__icon" aria-hidden="true"></span></summary>
+              <p>Not necessarily. Tell me what equipment you have access to on your application and I’ll build the plan around it, whether that’s a full gym, a garage setup, or just dumbbells.</p>
+            </details>
+            <details name="faq">
+              <summary>Is this only for men who are already strong in their faith?<span class="faq__icon" aria-hidden="true"></span></summary>
+              <p>No. Whether you’re rock solid, rusty, or just getting started, you’re welcome. The teaching meets you where you are.</p>
+            </details>
+            <details name="faq">
+              <summary>What does the nutrition part include?<span class="faq__icon" aria-hidden="true"></span></summary>
+              <p>Suggested calorie, protein, and nutrient target ranges that fit your goals and your life. It’s general guidance, not rigid meal plans or medical diet advice.</p>
+            </details>
+            <details name="faq">
+              <summary>What happens on the weekly call?<span class="faq__icon" aria-hidden="true"></span></summary>
+              <p>Thirty minutes to review your numbers, adjust your training and targets, pray together, and set the next week’s goals.</p>
+            </details>
+            <details name="faq">
+              <summary>Can I cancel?<span class="faq__icon" aria-hidden="true"></span></summary>
+              <p>[Add your cancellation / minimum term policy here.]</p>
+            </details>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section section--raised" id="apply">
-      <div class="wrap wrap--form">
-        <p class="eyebrow reveal">Apply</p>
-        <h2 class="reveal">Ready to set the standard?</h2>
-        <p class="body-md reveal">Fill this out and I’ll reach out to schedule your free 15-minute intro call.</p>
-        <form class="form reveal" id="apply-form" novalidate>
-          <label for="name">Full name</label>
-          <input id="name" name="name" type="text" autocomplete="name" required>
+    <section class="section" id="apply">
+      <div class="wrap">
+        <p class="sec-label"><span>07</span>Apply</p>
+        <div class="apply">
+          <div class="apply__intro">
+            <h2>Ready to set the standard?</h2>
+            <p class="body-md">Fill this out and I’ll reach out to schedule your free 15-minute intro call.</p>
+            <ol class="next">
+              <li>I read every application myself.</li>
+              <li>I email you to set up your free intro call.</li>
+              <li>If we’re a fit, your plan is ready before week one.</li>
+            </ol>
+          </div>
 
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" autocomplete="email" required>
+          <form class="form reveal" id="apply-form" novalidate>
+            <div class="form__progress" aria-hidden="true">
+              <span><b id="form-count">0</b> of 6 answered</span>
+              <span class="form__bar"><span id="form-bar"></span></span>
+            </div>
 
-          <label for="goal">Main goal</label>
-          <select id="goal" name="goal">
-            <option>Build muscle</option>
-            <option>Lose fat</option>
-            <option>Get stronger</option>
-            <option>Build consistency and discipline</option>
-            <option>Other</option>
-          </select>
+            <div class="form__row">
+              <div class="field" data-msg="Enter your name.">
+                <label for="name">Full name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-msg">
+                <small class="field__msg" id="name-msg"></small>
+              </div>
+              <div class="field" data-msg="Enter a valid email address.">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="email-msg">
+                <small class="field__msg" id="email-msg"></small>
+              </div>
+            </div>
 
-          <label for="experience">Training experience and any injuries</label>
-          <textarea id="experience" name="experience" rows="3" required></textarea>
+            <fieldset class="field field--chips" data-msg="Pick the goal that fits best.">
+              <legend>Main goal</legend>
+              <div class="chips">
+                <label class="chip"><input type="radio" name="goal" value="Build muscle" required><span>Build muscle</span></label>
+                <label class="chip"><input type="radio" name="goal" value="Lose fat"><span>Lose fat</span></label>
+                <label class="chip"><input type="radio" name="goal" value="Get stronger"><span>Get stronger</span></label>
+                <label class="chip"><input type="radio" name="goal" value="Build consistency and discipline"><span>Consistency and discipline</span></label>
+                <label class="chip"><input type="radio" name="goal" value="Other"><span>Other</span></label>
+              </div>
+              <small class="field__msg"></small>
+            </fieldset>
 
-          <label for="faith">Where are you in your faith right now?</label>
-          <textarea id="faith" name="faith" rows="3" required></textarea>
+            <div class="field" data-msg="A sentence or two is plenty.">
+              <label for="experience">Training experience and any injuries</label>
+              <textarea id="experience" name="experience" rows="3" required aria-describedby="experience-msg"></textarea>
+              <small class="field__msg" id="experience-msg"></small>
+            </div>
 
-          <label for="why">Why now?</label>
-          <textarea id="why" name="why" rows="3" required></textarea>
+            <div class="field" data-msg="A sentence or two is plenty.">
+              <label for="faith">Where are you in your faith right now?</label>
+              <textarea id="faith" name="faith" rows="3" required aria-describedby="faith-msg"></textarea>
+              <small class="field__msg" id="faith-msg"></small>
+            </div>
 
-          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
-          <button type="submit" class="btn btn--gold btn--block">Submit application</button>
-          <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
-        </form>
+            <div class="field" data-msg="A sentence or two is plenty.">
+              <label for="why">Why now?</label>
+              <textarea id="why" name="why" rows="3" required aria-describedby="why-msg"></textarea>
+              <small class="field__msg" id="why-msg"></small>
+            </div>
+
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+            <button type="submit" class="btn btn--accent btn--block"><span class="btn__label">Submit application</span> <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></button>
+            <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="wrap">
-      <p class="footer__copy">© <span id="year">2026</span> Iron Standard. All rights reserved.</p>
-      <p class="footer__disc">Coaching provides general fitness and nutrition guidance and is not medical advice. Consult your physician before starting any program.</p>
+      <div class="footer__top">
+        <a href="#top" class="logo">
+          <svg class="logo__mark" viewBox="0 0 16 16" aria-hidden="true"><path d="M0 1h16v3H0zM6.5 1h3v14h-3zM0 12h16v3H0z"/></svg>
+          Iron Standard
+        </a>
+        <nav class="footer__nav" aria-label="Footer">
+          <a href="#what-you-get">What you get</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#coach">Your coach</a>
+          <a href="#faq">FAQ</a>
+          <a href="#apply">Apply</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__disc">Coaching provides general fitness and nutrition guidance and is not medical advice. Consult your physician before starting any program.</p>
+        <p class="footer__copy">© <span id="year">2026</span> Iron Standard. All rights reserved.</p>
+      </div>
     </div>
   </footer>
+
+  <div class="mcta" id="mcta" inert>
+    <p class="mcta__price"><b>$150</b> / month<br>Free intro call first</p>
+    <a href="#apply" class="btn btn--accent btn--sm">Apply now</a>
+  </div>
 
   <script src="script.js"></script>
 </body>
